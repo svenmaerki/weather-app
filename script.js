@@ -29,7 +29,7 @@ function handlePositionSuccess(position) {
 
 function handlePositionError(err) {
     const infoTxt = document.querySelector(".info-txt");
-    infoTxt.innerText = err.message;
+    infoTxt.innerText = `Fehler: ${err.message}`;
     infoTxt.classList.add("error");
 }
 
